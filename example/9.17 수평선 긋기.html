@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>수평선 긋기</title>
+</head>
+
+<body>
+    <h3>수평선 긋기</h3>
+    <hr>
+    <p>hr 태그는 horizontal에서 딴 글자입니다.</p>
+    <hr>
+    <p>종료 태그 &lt;/hr&gt;를 사용하지 않음</p>
+</body>
+</html>
+
+html의 문자: 유니코드 문자셋, utf-8 코드 체계
+
+키보드로 입력이 어려운 기호들, 심볼
+&엔터티;    &#코드값;
+<       &lt;    &#60;
+>       &gt;    &#62;
+빈칸    &nbsp;  &#160;
+브라우저는 여러개의 빈칸을 한 개의 빈칸으로 처리함
+#--는 십진수 숫자를 의미
+
+
+print(chr(65))
+print(chr(66))
+
+print(ord("A"))
+print(ord("B"))
+
+num = 65
+print(num, hex(num), chr(num))
+
+chr : 10진수를 문자로
+ord : 문자를 10진수로
+hex : 10진수를 16진수로

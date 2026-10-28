@@ -1,0 +1,59 @@
+<!-- 태그: 블록태그와 인라인 태그로 구분
+블록태그: <p></p><h1></h1>
+항상 새 라인에서 시작하여 출력, 양 옆에 다른 콘텐트를 배치하지x 한 라인 독점사용
+
+인라인 태그: <strong></strong><a></a>
+블록 속에 삽입되어 블록의 일부로 출력
+
+<body>
+    <h3>div 공간 분할</h3>
+    <div style="background-color: aliceblue;">div 첫 번째 영역</div>
+    <div style="background-color: darkblue;">div 두 번째 영역</div>
+    <div style="background-color: darkgoldenrod;">div 세 번째 영역</div>
+
+    <h3>span 공간 분할</h3>
+    <span style="background-color: blue;">span 첫 번째 영역</span>
+    <span style="background-color: darkmagenta">span 두 번째 영역</span>
+    <span style="background-color: seashell">span 세 번째 영역</span>
+</body> -->
+
+
+
+<body>
+    <h3>div/span 공간 분할 조합</h3>
+    <div style="height: 70px; background-color: yellow;">머리말 영역</div>
+    <div style="height: 90px; background-color: palevioletred;">본문 영역<br><br>
+    <span style="background-color: red;">왼쪽 텍스트 영역</span>
+    <span style="background-color: white">가운데 텍스트 영역</span>
+    <span style="background-color: blue">오른쪽 텍스트 영역</span></div>
+    <div style="height: 40px; background-color: yellow;">꼬리말 영역</div>
+</body>
+
+height 높이 늘리고 싶을 때 쓰기
+만약 하나의 div 안에 여러개의 span을 쓰고 싶으면 div로 묶어주면됨
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&lt;div&gt;블록과 &lt;span&gt;인라인 </title>
+    </head>
+    <body>
+        <h3>사랑</h3>
+        <hr>
+        <div style="background-color: skyblue; padding: 20px;">
+            내가 사람의 방언과 천사의 말을 할지라도
+            <span style="color: red;">사랑</span>이 없으면
+            소리 나는 구리와 울리는 꽹과리가 되고,
+            <span style="color: red;" title="사랑사랑">사랑</span>이 없으면 아무
+            것도 아니라.
+        </div>
+        <p>
+            ~우리 서로 사랑하며 살아요~
+        </p>
+    </body>
+</html>
+
+padding: 본문과 영역사이의 글자 거리를 조절함(여백을 만듦)

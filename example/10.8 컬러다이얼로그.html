@@ -1,0 +1,234 @@
+<!-- <h3>컬러다이얼로그로 색 입력</h3>
+<hr>
+<form>
+    색 선택
+    <input type="color" value="#rrggbb"
+        onchange="document.body.style.color=this.value">
+</form>
+
+약 15문제, 코드를 알아야 단답식의 문항을 채울 수 있다.
+기본적으로 외워야하는건 외우기
+
+onchange 선택한 색을 브라우저의 바탕 글자에 적용하는 자바스크립트 코드
+<input type="month">
+<input type="week">
+<input type="date">
+<input type="datetime-local">
+<input type="time">
+value로 값을 정할 수 있다 -->
+
+<!-- <form>
+<pre>
+month : <input type="month" value="2022-03"><br>
+week :  <input type="week" value="2022-W09">><br>
+date :   <input type="date" value="2022-03-01"><br>
+time :   <input type="time" value="21:30"><br>
+local : <input type="datetime-local" value="2022-03-01T21:30:10.32">
+</pre>
+</form> -->
+
+<!-- <form>
+    <table>
+        <tr><td>생일</td>
+            <td><input type="date" value="2003-02-09"></td></tr>
+        <tr><td>생일파티시간</td>
+            <td><input type="time"></td></tr>
+        <tr><td>생일파티장소</td>
+            <td><input type="text"></td></tr>
+    </table>
+</form> -->
+
+<!-- <form>
+    지속시간 (0.0~10.0시간) :
+    <input type="number" min="0.0" max="10.0" step="0.5"><br><br>
+    
+    온도 설정 : 10&deg;
+    <input type="range" min="10" max="30" list="tem">30&deg;
+    <datalist id="tem">
+        <option value="12" label="low">
+        </option>
+        <option value="20" label="Medium">
+        </option>
+        <option value="28" label="High"></option>
+    </datalist>
+</form> -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 테니스회</title>
+    </head>
+
+    <body>
+        <h3>신입부원들을 환영합니다.</h3>
+    </body>
+
+    <form>
+        <table>
+            <tr><td>이름 : </td>
+                <td><input type="text" value=""></td></tr>
+
+            <tr><td>신발사이즈(230-290, 10단위)</td>
+                <td><input type="text" value="260"></td></tr>
+
+            <tr><td>테니스 스킬(1부터10)</td>
+                <td><input type="range" min="1" max="10" step="1"></td></tr>
+        </table>
+
+            <input type="button" value="제출">
+            <input type="button" value="초기화">
+    </form>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>형식을 가진 텍스트 입력</title>
+    </head>
+
+    <body>
+        <h3>회원 정보를 입력해주세요</h3>
+
+        <hr>
+
+        <form>
+        email : <input type="email" placeholder="id@host"><br>
+        홈페이지 : <input type="url" placeholder="https://"><br>
+        전화번호 : <input type="tel" placeholder="010-1234-5678">
+        <input type="submit" value="확인"><br>
+        <hr>
+
+        검색어 : <input type="search" placeholder="검색어">
+        <input type="button" value="제출">
+        </form>
+    </body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>폼 입력 그룹으로 묶기</title>
+    </head>
+
+    <body>
+        <h3>회원 정보를 입력해주세요</h3>
+        <hr>
+
+        <form>
+        <fieldset>
+            <legend>회원정보</legend>
+            이메일 : <input type="email"><br>
+            홈페이지 : <input type="url"><br>
+            전화번호 : <input type="tel"><br>
+        </fieldset>
+        <small>질문 : Tel. 010-111-1111</small>
+    </form>
+    </body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>로그인폼</title>
+    </head>
+
+    <body>
+        <h3>로그인 폼</h3>
+        <hr>
+
+        <form>
+        <fieldset>
+            <legend>Login</legend>
+            Username <input type="text">
+            Password <input type="password">
+        </fieldset>
+        </form>
+    </body>
+</html>
+
+<form>
+<fieldset>
+    <legend>인적사항입력</legend>
+    이름: <input type="text"><br>
+    전화번호: <input type="tel"><br>
+    주소: <input type="text">
+</fieldset>
+</form> -->
+
+
+<h3>도형 서식 폼 만들기</h3>
+<hr>
+
+<form>
+    <fieldset>
+        <legend>도형 서식 입력</legend>
+        선종류 <select size="3" name="ex">
+            <option value="1">선없음</option>
+            <option value="2">실선</option>
+            <option value="3">점선</option>
+        </select>
+
+        <br>
+        <label>
+        선두께 <input type="text" value="2" size="4"></label>
+        <lable>선색 <input type="color" value="#0000bb"><br></label>
+
+        투명도(0~100) : <input type="range" min="0" max="100" list="a">
+        <datalist id="a">
+        <option value="0"></option>
+        <option value="50"></option>
+        <option value="100"></option>
+        </datalist>
+    </fieldset>
+</form>
+
+<form>
+<p>
+<span>학년</span> 
+<label><input type="radio" value="1" name="grade" checked>1학년</label>
+<label><input type="radio" value="2" name="grade">2학년</label>
+<label><input type="radio" value="3" name="grade">3학년</label>
+<label><input type="radio" value="4" name="grade">4학년</label>
+</p>
+
+<p>
+<span>성별</span>
+<label><input type="radio" value="1" name="gender" checked>남</label>
+<label><input type="radio" value="2" name="gender">여</label>
+</p>
+
+<p>
+<span>관심 분야</span>
+<input type="text" list="interest" name="interest">
+<datalist id="interest">
+    <option value="모바일 소프트웨어"></option>
+    <option value="전자 전기 공학"></option>
+    <option value="컴퓨터 인공지능"></option>
+</datalist>
+</p>
+
+<p>
+<span>진로</span>
+<label><input type="checkbox" value="1" name="future" checked>개발</label>
+<label><input type="checkbox" value="2" name="future">기획</label>
+<label><input type="checkbox" value="3" name="future">영업</label>
+<label><input type="checkbox" value="4" name="future">창업</label>
+</p>
+
+<p>
+<span>남기고 싶은 말</span>
+<textarea rows="10" cols="50" placeholder="글을 남겨주세요" name="memo"></textarea>
+</p>
+
+<p>
+<input type="submit" value="제출">
+<input type="reset" value="취소">
+</p>

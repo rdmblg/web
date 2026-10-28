@@ -1,0 +1,64 @@
+<!-- 웹 폼
+1. 입력 양식에 데이터를 채워서 서버로 보내기
+2. 서버는 입력 양식을 받아서 서버 스크립트로 보냄
+3. 서버가 데이터 처리, 웹페이지 생성
+4. 입력에 대한 응답으로 새로운 웹페이지 전달 -->
+
+<!-- <form name="fo" method="get">
+    사용자 ID : <input type="text" size="15"  maxlength=15 value=""><br>
+    비밀 번호 : <input type="password" size="15" value=""><br>
+    <input type="submit" value="완료">
+</form>
+maxlength="" 글자 수 제한
+
+<form action=""></form>
+name="" 폼의 이름 지정
+action 폼 데이터를 처리할 웹 서버 응용프로그램 이름(파이썬 등)
+<p>method 폼 데이터를 웹 서버로 전송하는 형식
+:POST방식
+HTTP본문에 파라미터를 붙여서 데이터 전송, 글자수 제한X, GET보다 보안 우위
+:GET방식
+URL 뒤에 파라미터 붙여서 전달, &기호로 구분, 보안에 취약
+</p>
+target="" 윈도우 이름
+enctype="" 데이터의 인코딩 타입
+
+<input type=""> -->
+<form>
+텍스트 : <input type="text"><br>
+password : <input type="password"><br>
+button : <input type="button" value="1"><br>
+submit : <input type="submit" value="제출"><br>
+reset : <input type="reset"><br>
+image : <input type="image" src="images/cafelatte.jpg"><Br>
+<select>이게머지</select><Br>
+<input type="number"><Br>
+<input type="month"><Br>
+<input type="range"><Br>
+<input type="color"><Br>
+<input type="email"><Br>
+<input type="file"><Br>
+<button type="button|reset|submit"><Br></button>
+<textarea></textarea>
+</form>
+
+name=과 type=은 다름 *주의*
+
+
+
+
+<!-- 네이버 사례로 폼 전송 과정 이해
+<form name="sform" action="https://search.naver.com/search.naver" method="get">
+    <input name="query" type="text"><br>
+    <input name="id" type="text"><br>
+    <input name="password" type="text"><br>
+    <button type="submit">검색</button>
+    </form>
+
+    <br>
+    <form name="trans" action="https://translate.google.co.kr/#en/ko" method="get">
+        <input name="text" type="text">
+        <button type="submit">검색</button>
+    </form>
+</form> -->
+

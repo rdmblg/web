@@ -1,0 +1,54 @@
+<!-- <select name|size|multiple></select>
+
+name 요소 이름
+size 개수
+multiple 이 속성이 있으면 다수 항목 선택 가능
+
+option 태그로 여러 개 묶기
+value 전송되는 값
+selected 선택 상태로 출력 -->
+
+<!-- <h3>오늘 점심은?</h3>
+<hr>
+<form>
+    <select name="chiikawa">
+        <option value="1">시사</option>
+        <option value="2">쿠리만쥬</option>
+        <option value="3">사랑해</option>
+    </select>
+</form> -->
+
+
+<!-- 콤보박스와 리스트박스 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>콤보박스와 리스트박스 만들기</title>
+    </head>
+
+    <body>
+        <h3>가장 좋아하는 치이카와?</h3>
+        <hr>
+        
+        <form>
+            골라용 : <select name="chiikawa">
+                <option value="1">치이카와</option>
+                <option value="2">하치와레</option>
+                <option value="3">쿠리만쥬</option>
+            </select>
+        </form>
+
+        <h3>오늘 점심은?</h3>
+        <hr>
+
+        <form>
+            골라용 : <input type="text" list="lunch">
+            <datalist id="lunch">
+                <option value="짬뽕"></option>
+                <option value="짜장면"></option>
+                <option value="탕수육"></option>
+            </datalist>
+        </form>
+    </body>
+</html>
