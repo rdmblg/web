@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>시맨틱 태그로 구조화 연습</title>
+</head>
+
+<body>
+<header<h3>볼프강 아마데우스 모차르트</h3>
+
+<p>1756년 1월 27일 잘츠부르크에서 태어난 천재적인 오스트리아의 작곡가 모차르트 (1756년 1월 27일 ~ 1791년 12월 5일)를 소개한다.</p>
+
+<img src="파일" width="150" height="150">
+<small>1770년대 초상화
+</header>
+
+<nav>
+<h4>목차</h4>
+<ul type="disc">
+<li>생애
+<li>죽음
+<li>음악
+</nav>
+
+<section>
+<article><h4>생애</h4>
+<p>모차르트는 어ㅓ고어쩌고</p>
+</article>
+
+<article><h4>생애</h4>
+<p>모차르트는 어ㅓ고어쩌고</p>
+</article>
+<article><h4>생애</h4>
+<p>모차르트는 어ㅓ고어쩌고</p>
+</article>
+</section>
+
+<aside>
+<h3>모차르트의 죽음에 얽힌 전설</p>
+<p>어쩌고</p>
+</aside>
+
+<footer>2017년 10월 7일 작성, 위키피디어 참고</footer>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<title>웹브라우저소개</title>
+</head>
+
+<body>
+<h3>웹 브라우저 소개</h3>
+<hr>
+
+<table>
+<tr><td>
+<p>브라우저라고 불리기도 하는 웹 브라<br>
+우저(Web browser)는, 사용자에게 웹<br>
+서버 컴퓨터에 접속하고 웹 페이지,<br>
+이미지, 동영상, 음악 등 다양한 데이<br>
+터 다운받아 보여주는 소프트웨어이<br>
+다. <b>그림 1-2</b>는 대표적인 Chrome 웹<br>
+브라우저를 보여준다.</td>
+
+
+<td><figure><iframe src="9.29 하이퍼링크.html">
+<figcaption>그림 1-2 구글 Chrome</figcaption></figure>
+
+
+
+<tr><td>웨 ㅂ페이지는 브라우저에 HTML5 문<br>
+서임을 알리기 위해 <b>그림 1-3</b>과 같은<br>
+코드를 첫 라인에 삽입하여야 한다.</td>
+
+<td><code>&lt;!doctype html&gt;<br>
+&lt;/html&gt;<br>
+...<br>
+&lt;/html&gt;
+그림 1-3 HTML5 문서 구성</td>
+</body>
+</html>
+
+
+
+
+
+<details>
+<summary>내용내용</summary>
+<p>어쩌고 내용</p></details>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>실습문제</title>
+</head>
+
+<body>
+<h3>웹 프로그래밍 개요</h3>
+<hr>
+
+<details>
+<summary>웹의 기본 목적</summary>
+<p>웹의 기본 목적은 한 컴퓨터에서 만든 문서(doucment)를 다른 컴퓨터에서 쉽게 볼 수 있도록 하는 것이다</p>
+
+<summary>웹의 기본 목적</summary>
+<p>전 세계의 컴퓨터들을 인터넷으로 거미줄처럼 연결하고 웹 문서를 쉽게 주고 받을 수 있도록 시스템을 만들고 WWW(world Wide Web), 간단히 줄여 웹(Web)이라고 부른다.</p>
+
+<summary>웹의 기본 목적</summary>
+<ul>
+<li><p>HTML - 문서의 구조와 내용</p>
+<li><p>CSS(Cascading Style Sheet)- 문서의 모양</p>
+<li><p>Javascript - 행동 및 응용 프로그램</p>
+</ul>
+</details>
+</html>
+
+<input type="text" list="list">
+<datalist id="list">
+<option value="구글크롬">
+<option value="엣지">
+<option value="ㅇ">
+
+
+
+
+
+<h3>신입부원들 환영</h3>
+<form>
+<label>이름 : <input type="text"></label>
+
+<label for="앙">신발사이즈(230-290, 10단위)</label>
+<input type="text" id="앙">
+
+<label>테니스 스킬(1부터10>
+<input type="range" min="0" max="100" list="베입에">
+<datalist id="베입에">
+<option value="0">
+<option value="50">
+<option value="100"></datalist></label>
+
+<input type="submit" value="제출">
+<input type="reset" vaule="초기화">
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>표 작성</title>
+</head>
+
+<body>
+<table border="1">
+<caption>성적표</caption>
+<tr><th>이름</th><th>국어</th><th>영어</th></tr>
+<tr><td>홍길동</td><td>90</td><td>85</td></tr>
+<tr><th colspan="3">평균</th>
+</tabel>
+</body>
+</html>
+
