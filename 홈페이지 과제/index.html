@@ -1,25 +1,125 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <title>목차</title>
         <style>
-            .menu ul {
-                padding-top: 10px;
-                padding-bottom: 5px;
+            body {
+                margin: 0;
+                font-family: "IBM Plex Sans KR";
+                color: #222;
             }
-            .menu a:link,
-            .menu a:visited {
-                text-transform: none;
+
+            .header {
+                border-bottom: 1px solid #eee;
+            }
+
+            .link {
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .link a {
+                margin: 0 10px;
+                padding: 6px 14px;
+                border-radius: 20px;
+                font-size: 14px;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .link a:hover {
+                background-color: #eee;
+            }
+
+            .inner {
+                max-width: 1000px; margin: 0 auto; 
+                margin: 0 auto;
+            }
+
+            .title {
+                text-align: center;
+                padding: 50px 0 30px;
+            }
+
+            .img {
+                text-align: center;
+                padding: 0px 0px 50px;
+            }
+
+            hr {
+                width: 60%;         
+                margin: 30px auto; 
+            }
+
+            .features {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px 80px;
+                padding: 0 80px;
+                box-sizing: border-box;
+            }
+
+            .feature h3 {
+                font-size: 18px;
+                margin: 10px 0;
+            }
+
+            .feature p:hover {
+                background-color: #eee;
+                 border-radius: 8px;
+                 padding: 0px 5px;
             }
         </style>
     </head>
 
-    <body class="main">
-        <div class="menu">
-        <ul id="ul">
-            <li><a href="시간표 과제 연습.html"></a></li>
-        </ul>
-        </div>
+    <body>
+        <header class="header">
+            <nav class="link inner">
+                <a href="timetable.html" target="_blank">시간표</a>
+                <a href="introself.html" target="_blank">자기소개</a>
+                <a href="Playlist.html" target="_blank">Playlist</a>
+                <a href="wishlist.html" target="_blank">버킷리스트</a>
+            </nav>
+        </header>
+
+        <section class="inner title">
+            <p>웹 프로그래밍 기초</p>
+            <h1>도미란의 홈페이지에 오신 것을 환영합니다</h1>
+        </section>
+
+        <section class="img inner">
+            <img src="images/img1.jpg" alt="오류">
+        </section>
+
+        <hr>
+
+        <section class="inner features">
+            <div class="feature"><h3>&#127808;겨울에 하고 싶은 것</h3>
+            <p>팥 붕어빵과 슈크림 붕어빵 먹기</p>
+            <p>따뜻한 핫초코 마시기</p>
+            <p>전기장판 위에서 귤 까먹기</p></div>
+
+            <div class="feature"><h3>&#127881;이번 겨울 목표</h3>
+            <p>나만의 홈페이지 완성하기</p>
+            <p>기말고사 잘보기</p>
+            <p>붕어빵 많이 먹기</p></div>
+
+            <div class="feature"><h3>&#127851;취미</h3>
+            <p>빵 먹기</p>
+            <p>치이카와 보기</p>
+            <p>게임하기</p></div>
+
+            <div class="feature"><h3>&#127800;좋아하는 것</h3>
+            <p>잠자기</p>
+            <p>치킨 먹기</p>
+            <p>마라탕 먹기</p></div>
+        </section>
+
+        <footer>
+        <hr style="width:100%">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2026 도미란 홈페이지</p>
+        </footer>
     </body>
 </html>

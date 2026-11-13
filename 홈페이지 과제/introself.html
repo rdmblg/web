@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>자기소개</title>
+        <style>
+            body {margin: 20px 40px;}
+            fieldset {margin-bottom: 15px; padding: 10px 15px;}
+            legend {color: navy; font-weight: bold;}
+            th {text-align: left; width: 100px; padding: 5px 10px 5px 0;}
+        </style>
+    </head>
+
+    <body>
+        <h1>자기소개 폼</h1>
+        <form>
+            <fieldset>
+                <legend>기본 정보</legend>
+                <table>
+                <tr><th>이름</th><td><input type="text" placeholder="도미란"></td></tr>
+                <tr><th>닉네임</th><td><input type="text" placeholder="10자 이내" maxlength="10"></td></tr>
+
+                <tr><th>학과</th><td><input type="text" list="department" placeholder="항공우주공학과"><datalist id="department">
+                    <option value="항공우주공학과"></option>
+                    <option value="컴퓨터인공지능학과"></option>
+                    <option value="신소재공학과"></option>
+                    <option value="양자시스템공학과"></option>
+                    <option value="전자공학과"></option>
+                </datalist></td></tr>
+
+                <tr><th>학번</th><td><input type="text" placeholder="숫자 8자리" maxlength="8"></td></tr>     
+
+                <tr><th>학년</th><td><input type="radio" name="grade" value="1" checked>1학년
+                <input type="radio" name="grade" value="2">2학년
+                <input type="radio" name="grade" value="3">3학년
+                <input type="radio" name="grade" value="4">4학년</td></tr>
+
+                <tr><th>성별</th><td><input type="radio" name="gender" value="1">남
+                <input type="radio" name="gender" value="2" checked>여
+                <input type="radio" name="gender" value="3">선택 안 함</td></tr>
+                
+                <tr><th>이메일</th><td><input type="email" placeholder="rdmblg02@gmail.com"></td></tr>
+                <tr><th>연락처</th><td><input type="tel" placeholder="010-9431-8063"></td></tr>
+            </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>나는 이런 사람</legend>
+                <table>
+                    <tr><th>생일</th><td><input type="date"></td></tr>
+
+                    <tr><th>MBTI</th>
+                        <td>
+                            <select name="mbti">
+                                <option value="">선택 안 함</option>
+                                <option>INTJ</option> <option>INTP</option>
+                                <option>INFJ</option> <option>INFP</option>
+                                <option>ISTJ</option> <option>ISTP</option>
+                                <option>ISFJ</option> <option>ISFP</option>
+                                <option>ENTJ</option> <option>ENTP</option>
+                                <option>ENFJ</option> <option>ENFP</option>
+                                <option>ESTJ</option> <option>ESTP</option>
+                                <option>ESFJ</option> <option>ESFP</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                <tr><th>좋아하는 색</th><td><input type="color" value="#ffffff"></td></tr>
+                <tr><th>취미·특기</th><td><input type="text" size="35" placeholder="예) 책 읽기"></td></tr></table>
+            </fieldset>
+
+            <fieldset>
+                <legend>개발 관심사</legend>
+                <table><tr><th>관심 분야</th>
+                        <td>
+                            <select name="field">
+                                <option>HTML5</option>
+                                <option>CSS3</option>
+                                <option>JavaScript</option>
+                                <option>앱 개발</option>
+                                <option>인공지능</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><th>코딩 자신감</th>
+                        <td>
+                            <input type="range" min="0" max="10" value="5"
+                            oninput="document.getElementById('score').innerHTML = this.value">
+                            <b id="score">5</b> / 10
+                        </td>
+                    </tr>
+                    <tr><th>써 본 언어</th>
+                        <td>
+                            <input type="checkbox" name="lang">Python
+                            <input type="checkbox" name="lang">C/C++
+                            <input type="checkbox" name="lang">JavaScript
+                        </td>
+                    </tr>
+                    <tr><th>개발 환경</th>
+                        <td>
+                            <input type="radio" name="os" checked>Windows
+                            <input type="radio" name="os">Mac
+                            <input type="radio" name="os">Linux
+                        </td>
+                    </tr>
+                    <tr><th>진로</th>
+                        <td>
+                            <input type="checkbox" name="career" checked>개발
+                            <input type="checkbox" name="career">기획
+                            <input type="checkbox" name="career">영업
+                            <input type="checkbox" name="career">창업
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>한마디</legend>
+                <table>
+                    <tr><th>프로필 사진 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file"></th>
+                    </tr>
+                
+                <tr><th>
+                남기고 싶은 말<br>
+                <textarea rows="5" cols="50" placeholder="이 수업에서 꼭 배우고 싶은 것을 적어 주세요"></textarea></th></tr>
+                <tr><th><input type="checkbox" required> 개인정보 수집·이용에 동의합니다. (필수)</th></tr></table>
+            </fieldset>
+
+            <input type="submit" value="제출">
+            <input type="reset" value="취소">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>변수 사용</title>
+    </head>
+
+    <body>
+        <script>
+            let name = "사랑";              //변수가 만들어지면서 대입되는 값을 초기값, 즉 초기화 시킨다고 함
+            document.write("name: ", name, "<br>");
+            name = "희망";
+            document.write("name: ", name, "<br>");
+
+            const PI = 3.14159;
+            try {
+                PI = 3.14;  // const는 재정의 불가 -> 오류 발생
+                document.write("아아");
+            } catch (e) {
+                document.write("const 재대입 시도 결과: 오류 발생 -", e.message);
+            }
+            // try를 시도하고 안되면 catch를 해라
+        </script>
+    </body>
+</html>

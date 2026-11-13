@@ -1,0 +1,81 @@
+<!--내부 연습-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&lt;스타일시트 연습&gt;</title>
+        <style>
+            h3 {color : darkred;
+                text-align: center;}
+            body {background-color: linen;
+            color : blueviolet;
+            margin-left: 30px;
+            margin-right: 30px;}
+        </style>
+    </head>
+
+    <body>
+        <h3>소연재</h3>
+        <hr>
+        <p>저는 체조 선수 소연재입니다.
+            음악을 들으면서 책읽기를 좋아합니다.
+            김치 찌개와 막국수 무척 좋아합니다.
+        </p>
+    </body>
+</html>
+
+<!-- margin-left: 왼쪽 여백
+margin-right: 오른쪽 여백
+text-align: 텍스트 수평 정렬 -->
+
+
+<!--인라인 연습-->
+<p style = "color : magenta; font-size: 30px;">축구를 좋아합니다.</p>
+style 태그가 아닌 style 속성
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>구웨엑</title>
+        <style>
+            p {color : red; font-size: 15px;}
+        </style>
+    </head>
+
+    <body>
+        <h3>두쫀쿠</h3>
+        <hr>
+        <p>두쫀쿠 먹고싶다</p>
+        <P>근데 사실 마라탕도 먹고싶</P>
+        <p style="color : blue;">히히히히</p>
+        <p style="color : violet; font-size: 30px;">뿡!</p>
+    </body>
+</html>
+
+
+<!--외부 연습-->
+.css 파일에 스타일 시트 저장
+동일한 시트를 웹 페이지마다 중복 작성 해소
+
+<!-- <link> 태그로 불러오기 -->
+<link rel="stylesheet" href="style.css">
+
+rel : 정해진 값으로 불러온 문서와 무슨 관계인지를 나타냄
+: styleseet : css
+: icon : 브라우저 탭에 뜨는 아이콘
+: preload : 미리 불러올 파일
+
+href = 링크 주소
+
+type = text/css : 이건 안에 들어있는 내용이 css라고 알려주는 것
+style 태그의 type 속의 디폴트 값이 text/css이므로 type은 생략 가능
+
+<!-- @import로 불러오기 -->
+<style>
+  @import url("style.css");
+</style>
+<!--@import "style.css";도 가능
+@import url('style.css');도 가능
+@import는 <style> 태그와 함께 사용됨-->

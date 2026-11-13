@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>시간표</title>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+        <style>
+            .tables {border-collapse: collapse;}
+
+            .math2 {background-color: #ff9595;}
+            .chemistry2 {background-color: #8ebfff;}
+            .chemistry-lab2 {background-color: #ffeb84;}
+            .c-language {background-color: hsl(31, 100%, 76%);}
+            .psychology {background-color: #aeff70;}
+            .web-programming {background-color: #c9a5ff;}
+            .major-exploration {background-color: #48ff91;}
+
+            a {text-decoration: none;
+            color : #ffffff}
+            a:hover {color: red;}
+            a:visited {
+                color: violet;}
+            a:active {color: orange;}
+            
+            body { font-family: IBM Plex Sans KR;
+            margin: auto 1%;}
+        </style>
+    </head>
+
+    <body>
+        <h3>시간표 만들기</h3>
+            
+        <table id="tabels" class="tables" border="1">
+            <caption>
+                시간표
+            </caption>
+
+            <thead><tr height="30"><th  width="90">월요일</th>
+                <th width="90">화요일</th>
+                <th width="90">수요일</th>
+                <th width="90">목요일</th>
+                <th width="90">금요일</th></tr></thead>
+                        
+            <tbody>
+      
+                <tr height="40"><td class="math2" rowspan="2" valign="top"><a href="#math2">수학 2</a>
+                </td>
+                    <td class="chemistry2" rowspan="2" valign="top"><a href="#chemistry2">일반화학 2</a>
+                    </td>
+                <td class="math2" valign="top"><a href="#math2">수학 2</a>
+                </td>
+                <td class="c-language" rowspan="2" valign="top"><a href="#c-language">C언어 기초</a>
+                </td><td rowspan="4"></td></tr>
+            
+                <tr height="40"><td rowspan="3"></td></tr>
+
+                <tr height="40"><td class="chemistry-lab2" rowspan="2" valign="top"><a href="#chemistry-lab2">일반화학실험 2</a>
+                </td>
+                    <td class="c-language" valign="top"><a href="#c-language">C언어기초</a>
+                    </td>
+                    <td class="chemistry2" valign="top"><a href="#chemistry2">일반화학2</a>
+                    </td></tr>
+
+                <tr height="40">
+                    <td></td>
+                    <td></td></tr>
+
+
+                <tr><th colspan="5">점심시간</th></tr>
+
+
+                <tr height="40"><td class="psychology" rowspan="2" valign="top"><a href="#psychology">심리학개론</a>
+                </td>
+                    <td class="web-programming" rowspan="2" valign="top"><a href="#web-programming">웹프로그래밍기초</a>
+                    </td>
+                    <td class="psychology" valign="top"><a href="#psychology">심리학개론</a>
+                    </td>
+                    <td rowspan="2"></td>
+                    <td rowspan="6"></td></tr>
+
+                <tr height="40"><td rowspan="2"></td></tr>
+
+                <tr height="40"><td rowspan="4"></td>
+                    <td rowspan="4"></td>
+                    <td class="web-programming" valign="top"><a href="#web-programming">웹프로그래밍기초</a>
+                    </td></tr>
+
+                <tr height="40"><td class="major-exploration" rowspan="3"><a href="#major-exploration">통합전공탐색</a>
+                </td><td rowspan="3"></td></tr>
+
+                <tr></tr>
+                <tr></tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <h3>과목별 세부 내용</h3>
+        <details id="math2">
+            <summary>수학 2</summary>
+            <P>수학의 기본요소 및 전체적인 구조를 이해시켜 다양한 현실 문제를 창의적으로 해결</P>
+        </details>
+
+        <br>
+
+        <details id="chemistry2">
+            <summary>일반화학 2</summary>
+            <P>화학의 기본 개념을 이해하는데 바탕이 되는 원자/분자/이온의 구조를 공부</P>
+        </details>
+
+        <br>
+
+        <details id="chemistry-lab2">
+            <summary>일반화학실험2</summary>
+            <P>화학의 기본적인 이론과 지식을 이해하고 그 이론을 바탕으로 실험기술 습득</P>
+        </details>
+
+        <br>
+
+        <details id="c-language">
+            <summary>C언어 기초</summary>
+            <P>전산학 전공자가 기본적으로 학습해야 하는 기초 프로그래밍언어인 C언어를 초, 중급에서 다룸</P>
+        </details>
+
+        <br>
+
+        <details id="web-programming">
+            <summary>웹프로그래밍기초</summary>
+            <P>인터넷 웹 문서에서 사용하는 HTML과 JavaScript를 학습하여 직접 웹 페이지를 작성할 수 있도록 함</P>
+        </details>
+
+        <br>
+
+        <details id="major-exploration">
+            <summary>통합전공탐색</summary>
+            <P>보다 심화된 전공 탐색 기회를 제공하며 학생들이 자신의 흥미과 역량을 고려한 합리적인 전공 선택을 할 수 있도록 지원</P>
+        </details>
+
+        <br>
+        
+        <details id="psychology">
+            <summary>심리학개론</summary>
+            <P>심리학 개념의 이해를 통해 일상의 다양한 주제들과의 관련성을 확인하고 심리학의 기초지식을 습득</P>
+        </details>
+
+    </body>
+</html>
+
+

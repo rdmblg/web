@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>document예제</title>
+    </head>
+
+    <body>
+        <h1 id="greet">여기에 내용이 들어갑니다</h1>
+        <h2 id="message">welcome!</h2>
+        <script>
+            let el = document.getElementById("greet");  // id가 "greet"인 요소를 찾는다
+            el.innerHTML = "안녕하세요!";                 // 찾은 요소의 내용을 바꾼다
+            el.style.color = "blue";
+            el.style.border = "2px solid red";
+            el.style.backgroundColor = "yellow";
+            document.write(el.id);
+
+            let e = document.getElementById("message");
+            e.innerHTML = "환영합니다!";
+            e.style.color = "red";
+        </script>
+    </body>
+</html> 
