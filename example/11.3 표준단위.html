@@ -1,0 +1,39 @@
+4장 48p 참고 알아서외우길
+4장 49p 참고 알아서외우길
+4장 50p 참고 알아서외우길
+
+단축 프로퍼티 font-size
+font : font-style font-weight font-size font-family
+를 순서대로 지정하는 단축 프로퍼티
+
+font-size, font-family 외 생략 가능
+
+
+CSS3 폰트 활용
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+
+        <style>
+            body {
+                font-family: "Times New Roman", Serif;
+                font-size : large;
+            }
+            h3 {
+                font : italic bold 40px consolas, sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>Consolas font</h3>
+        <hr>
+        <p style="font-weight: 900;">font-weight 900</p>
+        <p style="font-weight: 100;">font-weight 100</p>
+        <p style="font-style: italic;">Italic Style</p>
+        <p style="font-style: oblique;">Oblique Style</p>
+        <p>현재 크기의 <span style="font-size: 1.5em;">1.5배</span>크기로</p>
+    </body>
+</html>

@@ -6,9 +6,9 @@
     </head>
 
     <body>
-        첫 번째 수: <input id="num1" type="text" value="30">
-        두 번째 수: <input id="num2" type="text" value="50">
-        <button onclick="calcSum()">계산하기</button>
+        첫 번째 수: <input id="num1" type="text" value="30"><br>
+        두 번째 수: <input id="num2" type="text" value="50"><br>
+        <button onclick="calcSum()">계산하기</button><br>
         합계: <input id="sum" type="text" readonly>
 
         <script>
@@ -20,12 +20,15 @@
             }
             // 이건 위에서 버튼을 눌렀을 때 calsSum함수를 실행시켜서
             // num1에 들어있는 value 값을 v1에다가 담고(v2)도 마찬가지, 결과 값을 total에다가 담기
-            //그리고 sum 값에 있는 value값을 total에 담겨 있는 값으로 바꿔서 출력하기
+            // 그리고 sum 값에 있는 value값을 total에 담겨 있는 값으로 바꿔서 출력하기
 
             function calcSum(){
                 let el = document.getElementById("num1");
                 let num11 = parseFloat(el.value);
-                let num1= parseFloat(document.getElementById("num1").value);
+
+                let num1 = parseFloat(document.getElementById("num1").value);
+                let num2 = parseFloat(document.getElementById("num2").value);
+                let total = num1 + num2;
 
                 // 함수를 실행시켰을 때 num1에 있는 모든 값을 받아서 el에다가 저장한 뒤
                 // num11 값에 el에 있는 값 중 value값을 따로 저장 후
@@ -33,3 +36,6 @@
         </script>
     </body>
 </html>
+
+<!--100+200처럼 문자열, 숫자 더하기 출력하는거 시험에 냄
+/랑 %구분하는거 낼수도 있음-->

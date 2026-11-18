@@ -1,0 +1,40 @@
+<!--
+<script>
+    let ftemp = prompt("화씨온도 입력 >", "90");
+    ftemp = parseInt(ftemp);
+    let ctemp = (ftemp - 32.0) * 5.0 / 9.0;
+    document.write("섭씨온도 : ", ctemp);
+</script>
+-->
+
+
+<body>
+    <form>
+        <input type="text" value="30" id="num1">
+        <button onclick="cal()">계산하기</button>
+        <input id="result" type="text" value="">
+    </form>
+</body>
+
+<script>
+    function cal()
+    {
+        let temp = document.getElementById("num1").value;
+        let ftemp = ((temp) - 32.0) * 5.0 / 9.0;
+        document.getElementById("result").value = ftemp;
+    }
+</script>
+
+
+
+<!--
+<script>
+    let weight = prompt("몸무게(kg) >", "71");
+    let height = prompt("키(m) >", "1.78");
+    weight = parseFloat(weight)
+    height = parseFloat(height)
+
+    let bmi = weight / (height ** 2);
+    document.write("당신의 BMI = ", bmi);
+</script>
+-->

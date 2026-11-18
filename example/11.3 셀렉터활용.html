@@ -1,17 +1,75 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>셀렉터 만들기</title>
+
+        <style>
+            a:visited { color : red;}
+            a:link { color : yellow;}
+            a:hover { background-color: black;}
+            a:active { background-color: blue;}
+/* 순서대로 방문한, 방문하지 않은, 마우스가 올라갈 때, 마우스로 누르고 있을 때*/
+        </style>
+    </head>
+
+    <body>
+        <a href="10.27 hr.html">hr</a>
+        <a href="10.27 hr.css">css</a>
+    </body>
+</html> -->
+
+
+<!-- first-letter, hover 사용 사례
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>셀렉터 만들기</title>
+
+        <style>
+            h3::first-letter { color: red;}
+            li:hover { background-color: yellowgreen;}
+        </style>
+    </head>
+
+    <body>
+        <h3>Web Programming</h3>
+        <hr>
+        <p>2학기 <b>학습 내용</b></p>
+        <ul>
+            <li>HTML5</li>
+            <li><strong>CSS</strong></li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <p>60점 이하는 F!</p>
+    </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>셀렉터 만들기</title>
     <style>
         h3, li { /* 태그 이름 셀렉터 */ color : brown;}
+
         div > div > strong { /*자식 셀렉터 */ background-color: yellow;}
+
         ul strong { /* 자손 셀렉터, 자식은 자손에 포함됨 */ color:dodgerblue}
+
         .warning { /* class 셀렉터 */ color: red;}
+
         body.main { /* class 셀렉터 */ background: aliceblue;}
+
         #list { /* id 셀렉터 */ background: mistyrose;}
+
         #list span { /* 자손 셀렉터 */ color: forestgreen;}
+
         h3::first-letter { /* 가상 클래스 셀렉터 */ color: red;}
+
         li:hover { /* 가상 클래스 셀렉터 */ background: yellowgreen;}
     </style>
     </head>
@@ -28,5 +86,43 @@
             </ul>
             <div class="warning">60점 이하는 F</div>
         </div>
+    </body>
+</html> -->
+
+
+실습 문제
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>셀렉터</title>
+
+        <style>
+            /* .main { background-color: aquamarine;}
+            h3 { color: green;}
+            div > strong { background-color: yellow; color: blue;}
+            div em {color : green;}
+            div b { color: red;} */
+            
+            h3, strong, em { color : green;}
+            div strong { color : red;}
+            div > strong { color : blue;}
+            #center { text-align: center;}
+            /* .right { text-align: right;} */
+            .indent { text-indent: 3em;}
+            /* em은 현재 글자크기를 기준으로함, 지금 10이면 1em = 10px
+            text-indent는 문단의 첫 줄을 들여쓰기 */
+            body.main { background-color: powderblue;}
+            #center strong { background: yellow;}
+        </style>
+    </head>
+
+    <body class="main">
+        <h3>얼굴</h3>
+        <hr>
+        <div id="center"><strong>박인희</strong></div>
+        <div class="indent"><p><em>길</em>을 걷고 산들 무엇하리
+            <strong>꽃</strong>이 내가 아니듯 내가
+            <strong>꽃</strong>이 될 수 없는 지금...</p></div>
     </body>
 </html>

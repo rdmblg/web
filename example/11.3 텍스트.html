@@ -1,0 +1,105 @@
+<!-- 텍스트를 꾸미는 CSS3 시트
+text-indent : length, percentage;           들여쓰기
+text-align : left, right, center, justify;  정렬
+text-decoration : none, underline, overline, line-through;  텍스트 꾸미기 -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>텍스트 꾸미기</title>
+
+        <style>
+            h3 { text-align: right;}
+
+            .p1 { text-indent: 3em; 
+            text-align: justify /*양쪽 정렬*/;}
+
+            .p2 { text-indent: 1em;
+                text-align: center;}
+
+            p span { text-decoration: line-through;}
+
+            p strong { text-decoration: overline;}
+        </style>
+    </head>
+
+    <body>
+        <h3>텍스트 꾸미기</h3>
+        <hr>
+        <p class="p1">HTML의 태그만으로 기존의
+		워드 프로세서와 같이 들여쓰기, 정렬, 공백, 
+		간격 등과 세밀한 <span>텍스트 제어</span>를
+		할 수 없다. </p>
+	    <p class="p2">그러나,
+		<strong>스타일 시트</strong>는 이를
+		 가능하게 한다. 들여쓰기, 정렬에 대해서
+		 알아본다
+	    </p>
+
+        <a href="https://www.naver.com/" style="text-decoration: none;">밑줄이 없는 네이버 링크</a>
+
+    </body>
+</html> -->
+
+
+<!-- a 적용
+<head>
+    <style>
+.menu ul {
+     padding-top: 10px;
+     padding-bottom: 5px;
+}
+.menu a:link,
+.menu a:visited {
+     font-size: 20px;
+     color: blue;
+     padding: 5px;
+     text-decoration: none;
+     text-align: left;
+}
+
+.menu a:hover {
+     background-color: black;
+     color: white;
+}
+
+.menu a:active {
+     background-color: red;
+}
+</style>
+</head>
+
+
+<body class="main">
+    <div class="menu">
+        <ul id="ul">
+            <li><a href="">시간표</a></li>
+            <li><a href="">취미</a></li>
+            <li><a href="">전공</a></li>
+            <li><a href="">동아리</a></li>
+        </ul>
+    </div>
+</body> -->
+
+
+실습 문제 6번
+<head>
+    <style>
+        a {color: green; text-decoration: none;}
+        a:hover {color: violet;
+        text-decoration: underline;}
+    </style>
+</head>
+
+<body>
+    <h3>링크 꾸미기</h3>
+    <br>
+    <p>초록색에 밑줄없는 링크, 마우스를 올리면 밑줄과 violet 색으로 변경</p>
+    <hr>
+    <ul>
+        <li><a href="">네이버 사이트</a></li>
+        <li><a href="">구글 사이트</a></li>
+    </ul>
+</body>

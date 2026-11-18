@@ -1,0 +1,85 @@
+<!-- 배경 색이나 이미지 지정
+backgorund-color, background-image
+둘 다 지정되면 배경 이미지가 출력되지 않는 영역에 배경색 출력 -->
+<!-- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            div {
+	background-color :  skyblue;
+	background-size : 100px 100px;
+	background-image : url("images/spongebob.png");
+	background-repeat : no-repeat;
+    repeat-y; 이건 y좌표로 반복하는거
+	background-position : left center;
+            }
+
+
+    div {
+	background-color :  skyblue;
+	background-size : 100px 100px;
+	background-image : url("media/spongebob.png");
+	background-repeat : repeat-y;
+	background-position : center center;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <div>SpongeBob is an over-optimistic
+ sponge that annoys other characters. </div>
+    </body>
+</html> -->
+
+
+
+<!-- backgournd 단축 프로퍼티
+/* 길게 쓴 버전 */
+background-color: skyblue;
+background-image: url("media/spongebob.png");
+background-position: center center;
+background-size: 100px 100px;
+background-repeat: repeat-y;
+
+/* 한 줄 버전 */
+background: skyblue url("media/spongebob.png") center center/100px 100px repeat-y;
+안쓴값은 기본값으로 초기화됨,
+항상 position/size 순으로 써야함(size쓸때만)
+다른 값들은 아무거나 아무 순서로 써도됨 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>배경 꾸미기</title>
+<style>
+div {
+	background-color : skyblue; /*벽 전체 페인트*/
+	background-size : 100px 100px;  /* 배경이미지 크기 */
+	background-image : url("media/spongebob.png"); /*배경이미지*/
+	background-repeat : repeat-y; /*배경 세로 반복*/
+	background-position : center center; /*배경 위치
+    가로/세로 정렬*/
+}
+div {
+	width : 200px;
+	height : 200px; 
+	color : blueviolet;
+	font-size : 16px;
+}
+</style>
+</head>
+<body>
+<h3>div 박스에 배경 꾸미기</h3>
+<hr>
+<div>SpongeBob is an over-optimistic
+ sponge that annoys other characters. </div>
+</body>
+</html>
+
+

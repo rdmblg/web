@@ -1,0 +1,32 @@
+<!--
+태그에 적용 가능한 스타일
+1. 웹 브라우저 디폴트값
+2. 외부 스타일 시트
+3. 내부 스타일 시트
+4. 인라인 스타일 시트
+4 -> 1 순서로 우선순위가 높음
+
+스타일 합치기와 오버라이딩이란?
+태그에 적용되는 모든 스타일이 합쳐지고
+스타일은 우선 순위가 높은 스타일이 적용되는 규칙-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>스타일 합치기 및 오버라이딩</title>
+        <link href="10.27 link.css" rel="stylesheet" type="text/css">
+
+        <style>
+            p { color : blue; font-size: 12px;}
+        </style>
+    </head>
+
+    <body>
+        <h3>p 태그에 중첩된 스타일</h3>
+        <hr>
+        <p>Hello, students!</p>
+        <p style="font-size:25px">안녕하세요 교수님!</p>
+    </body>
+</html>

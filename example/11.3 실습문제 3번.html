@@ -1,12 +1,28 @@
-<!DOCTYPE html>
+<!-- 3가지 방법
+1. 16진수 코드로 표현
+2. 10진수 코드와 rgb()로 표현
+3. 색 이름으로 표현
+
+div { color : #8A2BE2; } 	   /* blueviolet의 16진수 코드 */ 
+div { color : rgb(138, 43, 226); } /* blueviolet의 10진수 색 코드 */ 
+div { color : blueviolet; }	   /* blueviolet 색 이름 */  -->
+
+
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>실습문제</title>
+        
+        <style>
+            .table { border-collapse: collapse; border-color: yellow;}
+            th, td { width: 60px; padding: 8px 15px;}
+            body.main { text-align: center; font-size: 14px;}
+        </style>
     </head>
 
-    <body>
-        <table border="1">
+    <body class="main">
+        <table border="1" class="table">
             <thead>
             <tr><th>이름</th><th>코드</th><th>색</th><th>이름</th><th>코드</th><th>색</th></tr>
         </thead>
@@ -15,7 +31,37 @@
             <tr><td>Brown</td><td>#A52A2A</td><td width="10"><div style = "background-color: brown">&nbsp;</div></td><td>DeepSkyBlue</td><td>#A52A2A</td><td><div style = "background-color: deepskyblue">&nbsp;</div></tr>
             <tr><td>Blueviolet</td><td>#8A2BE2</td><td><div style = "background-color: blueviolet">&nbsp;</div></td><td>Gold</td><td>#FFD700</td><td><div style = "background-color: gold">&nbsp;</div></tr>
             <tr><td>DarkOrange</td><td>#FF8C00</td><td><div style = "background-color: darkorange">&nbsp;</div></td><td>OliveDrab</td><td>#6B8E23</td><td><div style = "background-color: olivedrab">&nbsp;</div></tr>
-        </tbody>
+        빈칸을 넣은 이유는 높이가 0이 돼서 안보이니까
+            </tbody>
         </table>
     </body>
-</html>
+</html> -->
+
+<!-- 
+색 관련 프로퍼티
+color : 색
+background-color : 색
+border-color : 색 -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>색 활용</title>
+
+        <style>
+            body div { color : white;
+                    margin: 0px 30px 10px;}
+        </style>
+    </head>
+
+    <body>
+        <h3>CSS3 색 활용</h3>
+        <hr>
+        <div style="background-color: deepskyblue;">deepskyeblue(#00BFFF)</div>
+        <div style="background-color: brown;">brown(#A52A2A)</div>
+    </body>
+</html> -->
+
+

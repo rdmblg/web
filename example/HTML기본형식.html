@@ -2,8 +2,36 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <title>ddd</title>
+    </head>
+
+    <body>
+    <form>
+        <input type="text" value="30" id="num1">
+        <button onclick="cal()">계산하기</button>
+        <input id="result" type="text" value="">
+    </form>
+    </body>
+
+<script>
+    function cal()
+    {
+        let temp = document.getElementById("num1").value;
+        let ftemp = (temp - 32.0) * 5.0 / 9.0;
+        document.getElementById("result").value = ftemp;
+    }
+</script>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
         <title></title>
     </head>
 
-    <body></body>
+    <body>
+        
+    </body>
 </html>
