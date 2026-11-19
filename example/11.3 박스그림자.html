@@ -1,0 +1,61 @@
+<!-- /*
+  [박스 그림자, box-shadow]
+  - box-shadow 프로퍼티 : 박스 전체에 그림자 효과
+
+  box-shadow : h-shadow v-shadow blur-radius spread-radius color | none | inset
+
+  - h-shadow      : 그림자의 가로 위치
+  - v-shadow      : 그림자의 세로 위치
+  - blur-radius   : 흐림 정도
+                    (예: 4px → 부드럽고 흐릿한 그림자)
+  - spread-radius : 번짐 정도, 그림자 크기(선택, 디폴트 0)
+                    (그림자의 크기를 확장 또는 축소)
+  - color         : 그림자 색
+  - none          : 그림자 없음
+  - inset         : 음각 박스로 보이게 박스 상단 안쪽(왼쪽과 위쪽)에 그림자 형성
+*/
+
+/* 예시 */
+.shadow1 { box-shadow: 10px 10px 4px 5px gray; }
+.shadow2 { box-shadow: 5px 5px 4px gray inset; } -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>div 박스에 그림자 만들기</title>
+<style>
+.redBox {
+	box-shadow : 10px 10px red;
+}
+.blurBox {
+	box-shadow : 10px 10px 5px skyBlue;
+}
+.multiEffect {
+/* 그림자 여러 개를 쉼표(,)로 구분해서 겹쳐 적용 */
+/* 먼저 쓴 그림자가 가장 위에 그려짐 */
+    box-shadow : 2px 2px 2px black,   /* 오른쪽(2px) 아래(2px)로 살짝 흐린(2px) 검은 그림자 */
+             0 0 25px blue,       /* 위치 이동 없이 넓게 흐린(25px) 파란 빛 (글로우 효과) */
+             0 0 5px darkblue;    /* 위치 이동 없이 좁게 흐린(5px) 진한 파란 테두리 빛 */
+}
+div {
+	width : 150px;
+	height : 70px;
+    padding : 10px; 
+    border : 10px solid lightgray;
+    background-image : url("images/spongebob.png");
+    background-size : 150px 100px;
+    background-repeat : no-repeat;
+}
+</style>
+</head>
+
+<body>
+<h3>박스 그림자 만들기</h3>
+<hr>
+<div class="redBox">뚱이와 함께</div><br>
+<div class="blurBox">뚱이와 함께</div><br>
+<div class="multiEffect">뚱이와 함께</div>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+<!-- /*
+  [마우스 커서 제어, cursor]
+  - cursor 프로퍼티 : HTML 태그 위에 마우스가 올라갈 때 마우스 커서 모양 지정
+
+  cursor : value
+
+  - value : 마우스 커서 모양을 나타내는 값
+    auto, crosshair, default, pointer, move, copy, help, progress,
+    text, wait, none, zoom-in, zoom-out, e-resize, ne-resize, nw-resize,
+    n-resize, se-resize, sw-resize, s-resize, w-resize, url 중 하나 지정
+
+  [값에 따른 커서 모양]
+  - auto / default : 기본 화살표
+  - crosshair      : 십자(+) 모양
+  - pointer        : 손가락 모양 (링크 위에 올렸을 때)
+  - move           : 사방 화살표 (이동)
+  - copy           : 화살표 + 작은 플러스(+) (복사)
+  - help           : 화살표 + 물음표(?) (도움말)
+  - progress       : 화살표 + 로딩 원 (작업 중, 클릭은 가능)
+  - text           : I 모양 (텍스트 입력/선택)
+  - wait           : 로딩 원만 (대기, 클릭 불가)
+  - none           : 커서 숨김
+  - zoom-in        : 돋보기 + (확대)
+  - zoom-out       : 돋보기 - (축소)
+  - n-resize       : 위아래 화살표 (크기 조절)
+  - e-resize       : 좌우 화살표 (크기 조절)
+  - ne-resize      : 대각선 화살표 (크기 조절)
+  - url(...)       : 직접 만든 이미지를 커서로 사용
+*/
+
+/* 예시 */
+.btn  { cursor: pointer; }
+.box  { cursor: move; }
+.img  { cursor: zoom-in; }
+.my   { cursor: url("mycursor.png"), auto; }   /* 이미지가 안 되면 auto로 대체 */ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>마우스 커서</title>
+</head>
+<body>
+<h3>마우스 커서</h3>
+아래에 마우스를 오려 보세요. 커서가 변합니다.
+<hr>
+<p style="cursor: crosshair">십자 모양 커서</p>
+<p style="cursor: help">도움말 모양 커서</p>
+<p style="cursor: pointer">포인터 모양 커서</p>
+<p style="cursor: progress">프로그램 실행 중 모양 커서</p>
+<p style="cursor: n-resize">상하 크기 조절 모양 커서</p>
+</body>
+</html>
